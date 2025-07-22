@@ -11,17 +11,19 @@ import MovieDetail from "./components/MovieDetail";
 
 const App = () => {
   return (
-    <div className="px-10 3md:px-14 lg:px-20 min-h-screen scroll-smooth text-white bg-blue-950">
-      <Header />
-      <HamburgerMenu />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/category/:categoryName" element={<CategoryPage />} />
-        <Route path="/movies" element={<Movies />} />
-        <Route path="/details/:mediaType/:id" element={<MovieDetail />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/series" element={<Series />} />
-      </Routes>
+    <div className="flex flex-col min-h-screen bg-blue-950 text-white">
+      <div className="px-10 3md:px-14 lg:px-20 flex-grow scroll-smooth">
+        <Header />
+        <HamburgerMenu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/category/:categoryName" element={<CategoryPage />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/details/:mediaType/:id" element={<MovieDetail />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/series" element={<Series />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
