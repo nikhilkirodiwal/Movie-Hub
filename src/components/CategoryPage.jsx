@@ -62,7 +62,7 @@ const CategoryPage = () => {
               <img
                 src={`${IMAGE_BASE}${movie.poster_path}`}
                 alt={movie.title}
-                className="w-full object-cover h-80"
+                className="w-full object-cover"
               />
             ) : (
               <div className="h-64 bg-gray-700 flex items-center justify-center">
