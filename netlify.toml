@@ -1,2 +1,7 @@
 [build.environment]
 SECRETS_SCAN_OMIT_KEYS = "VITE_BASE_URL,VITE_IMAGE_BASE,VITE_API_KEY,VITE_BACKDROP_BASE"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
