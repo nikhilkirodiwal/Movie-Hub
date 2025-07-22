@@ -15,6 +15,7 @@ dist-ssr
 
 # Env files
 .env
+_redirects
 
 # Editor directories and files
 .vscode/*
