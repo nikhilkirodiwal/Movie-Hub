@@ -22,7 +22,7 @@ const Search = () => {
         const response = await fetch(
           `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${encodeURIComponent(
             query
-          )}&include_adult=false`
+          )}&include_adult=true`
         );
         const data = await response.json();
         if (data.results) {
