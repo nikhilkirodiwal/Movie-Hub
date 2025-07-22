@@ -38,7 +38,7 @@ const Footer = () => {
         {/* Developer Credit */}
         <div className="text-center text-sm text-gray-400">
           © {new Date().getFullYear()} MovieHub. Developed by{" "}
-          <span className="text-amber-400 font-semibold">Nikhil</span>.
+          <span className="text-amber-400 font-semibold">Nikhil Kirodiwal</span>.
         </div>
       </div>
     </footer>
