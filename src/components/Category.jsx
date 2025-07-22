@@ -6,7 +6,7 @@ const categoryData = [
   { name: "Kids", image: "https://images.unsplash.com/photo-1683768814494-5326ac8d7437?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGNhcnRvb24lMjBtb3ZpZSUyMHBvc2VydHxlbnwwfHwwfHx8MA%3D%3D" },
   { name: "Crime", image: "https://plus.unsplash.com/premium_photo-1682124119930-9c9bc75441fc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D" },
   { name: "Horror", image: "https://images.unsplash.com/photo-1545859818-2ee8b3610952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGhvcnJvciUyMG1vdmllfGVufDB8fDB8fHww" },
-  { name: "Animation", image: "https://images.unsplash.com/photo-1621478374422-35206faeddfb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIzfHx8ZW58MHx8fHx8" },
+  { name: "Anime", image: "https://images.unsplash.com/photo-1621478374422-35206faeddfb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIzfHx8ZW58MHx8fHx8" },
 ];
 
 const Category = () => {

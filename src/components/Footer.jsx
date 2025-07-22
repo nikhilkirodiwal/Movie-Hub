@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   const linkClasses = ({ isActive }) =>
@@ -10,8 +11,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-blue-900 text-white py-8 mt-10">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
-        {/* Site Info */}
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+        
         <div className="text-center md:text-left">
           <h2 className="text-2xl font-bold mb-2">🎬 MovieHub</h2>
           <p className="text-sm text-gray-300">
@@ -19,7 +20,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Navigation Links */}
         <div className="flex flex-wrap justify-center gap-4 font-medium text-base">
           <NavLink to="/" className={linkClasses}>
             Home
@@ -35,10 +35,41 @@ const Footer = () => {
           </NavLink>
         </div>
 
-        {/* Developer Credit */}
         <div className="text-center text-sm text-gray-400">
-          © {new Date().getFullYear()} MovieHub. Developed by{" "}
-          <span className="text-amber-400 font-semibold">Nikhil Kirodiwal</span>.
+          <p>
+            © {new Date().getFullYear()} MovieHub. Developed by{" "}
+            <span className="text-amber-400 font-semibold">
+              Nikhil Kirodiwal
+            </span>
+            .
+          </p>
+
+          <div className="flex justify-center items-center gap-4 mt-2 text-2xl">
+            <a
+              href="https://github.com/nikhilkirodiwal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://linkedin.com/in/nikhil-kirodiwal-659933296"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-blue-500 transition"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://instagram.com/nikhil._saini"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-pink-500 transition"
+            >
+              <FaInstagram />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -32,13 +32,13 @@ export default function Swipper() {
         centeredSlides
         slidesPerView="auto"
         coverflowEffect={{
-          rotate: 50,
+          rotate: 70,
           stretch: 0,
           depth: 100,
           modifier: 1,
           slideShadows: true,
         }}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
         loop
         pagination
         modules={[EffectCoverflow, Pagination, Autoplay]}

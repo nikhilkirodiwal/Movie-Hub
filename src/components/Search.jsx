@@ -59,7 +59,7 @@ const Search = () => {
       ) : error ? (
         <p className="text-center text-red-400 mt-6">{error}</p>
       ) : results.length > 0 ? (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {results.map(
             (movie) =>
               movie.poster_path && (

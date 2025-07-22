@@ -37,7 +37,7 @@ const Movies = ({ limit, carousel = false }) => {
 
   return (
     <div className="py-5">
-      <h2 className="flex justify-between items-center mb-4 text-white text-xl font-bold">
+      <h2 className="flex justify-between items-center mb-2 md:mb-4 text-white text-xl font-bold">
         <p className="text-3xl font-bold text-white">Popular Movies</p>
         {limit && movies.length > limit && (
           <NavLink
@@ -58,12 +58,13 @@ const Movies = ({ limit, carousel = false }) => {
             <Swiper
               modules={[Navigation, Pagination]}
               spaceBetween={20}
-              slidesPerView={2}
+              slidesPerView={1}
               navigation
               pagination={{ clickable: true }}
               breakpoints={{
-                640: { slidesPerView: 3 },
-                768: { slidesPerView: 4 },
+                600: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                850: { slidesPerView: 4 },
                 1024: { slidesPerView: 5 },
               }}
             >
@@ -75,7 +76,7 @@ const Movies = ({ limit, carousel = false }) => {
                         <img
                           src={`${IMAGE_BASE}${movie.poster_path}`}
                           alt={movie.title}
-                          className="w-full h-80 object-cover"
+                          className="w-full object-cover"
                         />
                       ) : (
                         <div className="h-64 bg-gray-700 flex items-center justify-center">
@@ -91,7 +92,7 @@ const Movies = ({ limit, carousel = false }) => {
               ))}
             </Swiper>
           ) : (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
               {displayedMovies.map((movie) => (
                 <NavLink to={`/details/movie/${movie.id}`}>
                   <div className="bg-gray-800 text-white rounded shadow overflow-hidden hover:scale-105 transition-transform duration-200">

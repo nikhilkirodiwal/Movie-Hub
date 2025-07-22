@@ -7,7 +7,7 @@ const genreMap = {
   kids: 10751,
   crime: 80,
   horror: 27,
-  animation: 16,
+  anime: 16,
 };
 
 const CategoryPage = () => {
@@ -51,7 +51,7 @@ const CategoryPage = () => {
       <h2 className="text-2xl font-bold text-white mb-4 capitalize">
         {categoryName} Movies
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {movies.map((movie) => (
           <NavLink
             to={`/details/movie/${movie.id}`}

@@ -38,7 +38,7 @@ const MovieDetail = () => {
     <div className="pt-1 min-h-screen text-white">
       {data.backdrop_path && (
         <div
-          className="relative h-[400px] bg-cover bg-center"
+          className="relative h-[450px] bg-cover bg-center"
           style={{
             backgroundImage: `url(${BACKDROP_BASE}${data.backdrop_path})`,
           }}
